@@ -1,0 +1,14 @@
+main {
+  flex-grow: 1;
+}
+
+.main-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}

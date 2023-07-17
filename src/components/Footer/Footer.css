@@ -1,0 +1,16 @@
+footer {
+  background-color: #222;
+  text-align: center;
+}
+.footer-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+h6 {
+  color: #eaeaea;
+  font-size: 0.825rem;
+  font-weight: bold;
+}

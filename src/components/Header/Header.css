@@ -1,0 +1,17 @@
+header {
+  background-color: #222;
+  text-align: center;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+h1 {
+  color: #eaeaea;
+  font-size: 2rem;
+  font-weight: bold;
+}

@@ -1,0 +1,31 @@
+.horned-beast-container {
+  width: 300px;
+  padding: 2em;
+  background-color: hotpink;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: 1em 0;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: left;
+}
+
+.beast-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-top: auto;
+}
