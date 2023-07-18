@@ -4,11 +4,29 @@ main {
 
 .main-container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 350px;
   margin: 0 auto;
   padding: 2em 0;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2em;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+
+@media (min-width: 1000px) {
+  .main-container {
+    max-width: 700px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container {
+    max-width: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

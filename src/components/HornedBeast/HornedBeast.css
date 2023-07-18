@@ -1,9 +1,10 @@
 .horned-beast-container {
-  width: 300px;
+  /* width: 300px; */
   padding: 2em;
   background-color: hotpink;
   display: flex;
   flex-direction: column;
+  gap: 1em;
   justify-content: flex-start;
   align-items: center;
   border-radius: 5px;
@@ -15,6 +16,16 @@ h2 {
   color: #222;
 }
 
+h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #222;
+}
+
+h4 > span {
+  font-size: 1.5em;
+}
+
 img {
   width: 100%;
   display: block;
@@ -22,6 +33,13 @@ img {
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: left;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+img:hover {
+  cursor: pointer;
+  filter: grayscale(1);
 }
 
 .beast-description {

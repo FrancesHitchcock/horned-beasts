@@ -15,3 +15,11 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
 }
+
+h1:hover {
+  cursor: pointer;
+}
+
+.dark h1 {
+  color: hotpink;
+}

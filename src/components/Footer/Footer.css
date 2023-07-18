@@ -2,6 +2,7 @@ footer {
   background-color: #222;
   text-align: center;
 }
+
 .footer-container {
   width: 90%;
   max-width: 800px;
@@ -13,4 +14,8 @@ h6 {
   color: #eaeaea;
   font-size: 0.825rem;
   font-weight: bold;
+}
+
+.dark h6 {
+  color: hotpink;
 }
