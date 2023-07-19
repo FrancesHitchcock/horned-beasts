@@ -14,6 +14,10 @@
   border-radius: 5px;
 }
 
+.dark .selected-beast-modal {
+  background-color: #eaeaea;
+}
+
 .selected-beast-container {
   margin: 2.5em;
   padding: 1em 2em 2em;

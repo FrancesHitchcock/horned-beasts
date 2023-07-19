@@ -19,4 +19,4 @@ This was an introductory React project created with create-react-app. The projec
 
 ## 19/07/20
 
-- Added modal
+- Added modal functionality so if user clicks on image the beast is displayed in a modal.

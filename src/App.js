@@ -15,11 +15,11 @@ function App() {
 
   const [modalVisible, setModalVisible] = useState(false);
 
-  const [selectedObject, setSelectedObject] = useState(data[0]);
+  const [selectedObject, setSelectedObject] = useState({});
 
   function handleImageClick(id) {
     const newObject = data.filter((item) => item._id === id)[0];
-    setSelectedObject({ ...newObject });
+    setSelectedObject(newObject);
     setModalVisible(true);
   }
 
