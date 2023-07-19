@@ -7,11 +7,6 @@ main {
   max-width: 350px;
   margin: 0 auto;
   padding: 2em 0;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2em;
-  align-items: center; */
   display: grid;
   grid-template-columns: 1fr;
   gap: 2em;

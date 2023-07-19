@@ -47,3 +47,12 @@ img:hover {
   line-height: 1.6;
   margin-top: auto;
 }
+
+.likes {
+  transition: all 0.5s;
+}
+
+.likes:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}

@@ -16,3 +16,7 @@ This was an introductory React project created with create-react-app. The projec
 - Responsiveness added using Grid
 - functionality added to HornedBeast.js to add likes when image is clicked
 - Dark mode toggles when h1 header is clicked.
+
+## 19/07/20
+
+- Added modal
