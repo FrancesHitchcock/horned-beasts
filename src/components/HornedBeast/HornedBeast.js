@@ -32,7 +32,7 @@ export default function HornedBeast({
         </span>{" "}
         {likes}
       </h4>
-      <p className="beast-description">{description}</p>
+      {/* <p className="beast-description">{description}</p> */}
     </div>
   );
 }

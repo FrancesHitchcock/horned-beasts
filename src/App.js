@@ -18,12 +18,13 @@ function App() {
   const [selectedObject, setSelectedObject] = useState(data[0]);
 
   function handleImageClick(id) {
-    // console.log(typeof id);
     const newObject = data.filter((item) => item._id === id)[0];
-    // console.log(selectedObj);
     setSelectedObject({ ...newObject });
-    // console.log(selectedObject);
     setModalVisible(true);
+  }
+
+  function handleModalCloseClick() {
+    setModalVisible(false);
   }
 
   function toggleDarkMode() {
@@ -40,7 +41,12 @@ function App() {
       <Header toggleDarkMode={toggleDarkMode} />
       <Main data={data} handleImageClick={handleImageClick} />
       <Footer />
-      {modalVisible && <SelectedBeast selectedObject={selectedObject} />}
+      {modalVisible && (
+        <SelectedBeast
+          selectedObject={selectedObject}
+          handleModalCloseClick={handleModalCloseClick}
+        />
+      )}
     </div>
   );
 }
