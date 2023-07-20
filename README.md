@@ -17,6 +17,11 @@ This was an introductory React project created with create-react-app. The projec
 - functionality added to HornedBeast.js to add likes when image is clicked
 - Dark mode toggles when h1 header is clicked.
 
-## 19/07/20
+## 19/07/23
 
 - Added modal functionality so if user clicks on image the beast is displayed in a modal.
+
+## 20/07/23
+
+- Refactored code so entire beast object is passed as a prop rather than individual properties.
+- Add functionality so the user can filter by number of horns.

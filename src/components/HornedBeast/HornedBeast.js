@@ -3,13 +3,7 @@ import { useState } from "react";
 import "../../reset.css";
 import "./HornedBeast.css";
 
-export default function HornedBeast({
-  title,
-  url,
-  description,
-  handleImageClick,
-  id,
-}) {
+export default function HornedBeast({ beast, handleImageClick }) {
   const [likes, setLikes] = useState(0);
 
   function handleLikesClick() {
@@ -18,13 +12,13 @@ export default function HornedBeast({
 
   return (
     <div className="horned-beast-container">
-      <h2 className="beast-name">{title}</h2>
+      <h2 className="beast-name">{beast.title}</h2>
       <img
         className="beast-image"
-        src={url}
-        alt={title}
-        title={title}
-        onClick={() => handleImageClick(id)}
+        src={beast.image_url}
+        alt={beast.title}
+        title={beast.title}
+        onClick={() => handleImageClick(beast)}
       />
       <h4>
         <span className="likes" onClick={handleLikesClick}>

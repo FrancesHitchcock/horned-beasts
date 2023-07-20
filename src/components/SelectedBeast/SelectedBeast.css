@@ -1,6 +1,6 @@
 .selected-beast-modal {
   /* color: white; */
-  background-color: #222;
+  background-color: rgba(34, 34, 34, 0.8);
   position: fixed;
   width: 90%;
   max-width: 500px;

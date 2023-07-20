@@ -17,14 +17,20 @@ function App() {
 
   const [selectedObject, setSelectedObject] = useState({});
 
-  function handleImageClick(id) {
-    const newObject = data.filter((item) => item._id === id)[0];
-    setSelectedObject(newObject);
+  const [numOfHorns, setNumOfHorns] = useState("");
+
+  function handleHornsSelect(val) {
+    setNumOfHorns(val);
+  }
+
+  function handleImageClick(beast) {
+    setSelectedObject(beast);
     setModalVisible(true);
   }
 
   function handleModalCloseClick() {
     setModalVisible(false);
+    setSelectedObject({});
   }
 
   function toggleDarkMode() {
@@ -38,8 +44,15 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Header toggleDarkMode={toggleDarkMode} />
-      <Main data={data} handleImageClick={handleImageClick} />
+      <Header
+        toggleDarkMode={toggleDarkMode}
+        handleHornsSelect={handleHornsSelect}
+      />
+      <Main
+        data={data}
+        handleImageClick={handleImageClick}
+        numOfHorns={numOfHorns}
+      />
       <Footer />
       {modalVisible && (
         <SelectedBeast
